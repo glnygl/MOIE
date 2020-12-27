@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EmptyStateView" customModule="MOIE" customModuleProvider="target">
+            <connections>
+                <outlet property="descriptionLabel" destination="gT4-kb-Pf3" id="Axk-ce-ZVj"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gT4-kb-Pf3">
+                    <rect key="frame" x="186.5" y="442" width="41" height="22"/>
+                    <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="16"/>
+                    <color key="textColor" red="0.16078431372549018" green="0.16470588235294117" blue="0.17254901960784313" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6xz-mj-diR">
+                    <rect key="frame" x="374" y="54" width="24" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="3cF-r2-ICX"/>
+                        <constraint firstAttribute="width" constant="24" id="zj7-TP-eky"/>
+                    </constraints>
+                    <color key="tintColor" red="0.16078431372549018" green="0.16470588235294117" blue="0.17254901960784313" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" image="refresh"/>
+                    <connections>
+                        <action selector="refreshAction:" destination="-1" eventType="touchUpInside" id="0Y8-50-lDM"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="gT4-kb-Pf3" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="1ra-b3-aoA"/>
+                <constraint firstItem="6xz-mj-diR" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="dA0-lA-fWV"/>
+                <constraint firstItem="gT4-kb-Pf3" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="j9d-X6-AWX"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="6xz-mj-diR" secondAttribute="trailing" constant="16" id="kws-Ad-9aQ"/>
+            </constraints>
+            <point key="canvasLocation" x="-197" y="104"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="refresh" width="200" height="200"/>
+    </resources>
+</document>

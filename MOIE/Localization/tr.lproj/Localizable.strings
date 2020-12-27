@@ -1,0 +1,22 @@
+/* 
+  Localizable.strings
+  MOIE
+
+  Created by glnygl on 26.12.2020.
+  
+*/
+
+// States
+
+"emptyState" = "Aradığınızı bulamadık 😐";
+"errorState" = "Bir şeyler test gitti 🤔";
+
+// Titles
+
+"popularMovies" = "Popüler Filmler";
+"movieDetail" = "Film Detay";
+"personDetail" = "Kişi Detay";
+
+// Person Detail
+"age" = "Age: %@";
+"date" = "Release Date \n %@";
